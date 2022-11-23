@@ -1,0 +1,180 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  background-color: #f7f8fc;
+  font-family: "Roboto", sans-serif;
+  color: #10182f;
+}
+.card-container {
+  display: flex;
+  width: 90%;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin: 20px auto;
+}
+
+/* /////////Uploads Component Style */
+.username,
+.occupation,
+.input {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 20px;
+}
+
+.submit,
+.search {
+  width: 200px;
+  background-color: #4caf50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  font-size: 20px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.submit:hover,
+.search:hover {
+  background-color: #45a049;
+}
+
+.uploads-container {
+  border-radius: 10px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  margin: 50px;
+}
+
+.image-file::-webkit-file-upload-button {
+  visibility: hidden;
+}
+.image-file::before {
+  content: "Select some files";
+  display: inline-block;
+  border: 1px solid royalblue;
+  border-radius: 5px;
+  padding: 5px 8px;
+  outline: none;
+  white-space: nowrap;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 18px;
+  opacity: 0.8;
+  background: cadetblue;
+  color: aliceblue;
+}
+.image-file:hover::before {
+  background-color: brown;
+}
+.image-file:active::before {
+  background: -webkit-linear-gradient(top, #e3e3e3, #f9f9f9);
+}
+input.image-file {
+  text-align: center;
+  width: 165px;
+  cursor: pointer;
+  margin: auto;
+  display: block;
+}
+.form > div {
+  padding: 10px 40px;
+  text-align: left;
+}
+h1 {
+  text-align: center;
+}
+.link {
+  position: fixed;
+  top: 50px;
+  right: 50px;
+  text-decoration: none;
+  color: aliceblue;
+  padding: 10px 20px;
+  background: cadetblue;
+  border-radius: 5px;
+  font-size: 22px;
+  cursor: pointer;
+  transition: all 0.5s ease;
+  z-index: 2;
+}
+.link:hover {
+  background: aliceblue;
+  color: cadetblue;
+}
+.input-container {
+  display: flex;
+  justify-content: center;
+}
+.profile-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+form.search-form {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin: 30px auto;
+  align-items: center;
+}
+label {
+  font-size: 23px;
+}
+.submit-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (max-width: 600px) {
+  form.search-form {
+    flex-wrap: wrap;
+  }
+  .input {
+    width: 90%;
+  }
+  .profile-container {
+    flex-wrap: wrap;
+  }
+  .uploads-container {
+    padding: 0px;
+    margin: 0px;
+  }
+  h1 {
+    margin: 0;
+    padding: 10px;
+  }
+}
+.paginate{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  color: black;
+  margin: 20px auto;
+}
+.paginatebtn{
+  font-size: 18px;
+  color: black;
+  font-weight: 700;
+  font-style: normal;
+  background: transparent;
+  border: 3px solid black;
+  padding: 5px 10px;
+  border-radius: 3px;
+  cursor: pointer;
+}
